@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8EC460A21E03C83C00E17B0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC460A11E03C83C00E17B0D /* main.m */; };
+		8EC460A51E03C83C00E17B0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC460A41E03C83C00E17B0D /* AppDelegate.m */; };
+		8EC460A81E03C83C00E17B0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC460A71E03C83C00E17B0D /* ViewController.m */; };
+		8EC460AB1E03C83C00E17B0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC460A91E03C83C00E17B0D /* Main.storyboard */; };
+		8EC460AD1E03C83C00E17B0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC460AC1E03C83C00E17B0D /* Assets.xcassets */; };
+		8EC460B01E03C83C00E17B0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC460AE1E03C83C00E17B0D /* LaunchScreen.storyboard */; };
+		8EC460BB1E03C83C00E17B0D /* littlebubbleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC460BA1E03C83C00E17B0D /* littlebubbleTests.m */; };
+		8EC460C61E03C83C00E17B0D /* littlebubbleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC460C51E03C83C00E17B0D /* littlebubbleUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EC460B71E03C83C00E17B0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EC460951E03C83B00E17B0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EC4609C1E03C83B00E17B0D;
+			remoteInfo = littlebubble;
+		};
+		8EC460C21E03C83C00E17B0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EC460951E03C83B00E17B0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EC4609C1E03C83B00E17B0D;
+			remoteInfo = littlebubble;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8EC4609D1E03C83C00E17B0D /* littlebubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = littlebubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC460A11E03C83C00E17B0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8EC460A31E03C83C00E17B0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8EC460A41E03C83C00E17B0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8EC460A61E03C83C00E17B0D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8EC460A71E03C83C00E17B0D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8EC460AA1E03C83C00E17B0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8EC460AC1E03C83C00E17B0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8EC460AF1E03C83C00E17B0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8EC460B11E03C83C00E17B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EC460B61E03C83C00E17B0D /* littlebubbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = littlebubbleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC460BA1E03C83C00E17B0D /* littlebubbleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = littlebubbleTests.m; sourceTree = "<group>"; };
+		8EC460BC1E03C83C00E17B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EC460C11E03C83C00E17B0D /* littlebubbleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = littlebubbleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC460C51E03C83C00E17B0D /* littlebubbleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = littlebubbleUITests.m; sourceTree = "<group>"; };
+		8EC460C71E03C83C00E17B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EC4609A1E03C83B00E17B0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC460B31E03C83C00E17B0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC460BE1E03C83C00E17B0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EC460941E03C83B00E17B0D = {
+			isa = PBXGroup;
+			children = (
+				8EC4609F1E03C83C00E17B0D /* littlebubble */,
+				8EC460B91E03C83C00E17B0D /* littlebubbleTests */,
+				8EC460C41E03C83C00E17B0D /* littlebubbleUITests */,
+				8EC4609E1E03C83C00E17B0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8EC4609E1E03C83C00E17B0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EC4609D1E03C83C00E17B0D /* littlebubble.app */,
+				8EC460B61E03C83C00E17B0D /* littlebubbleTests.xctest */,
+				8EC460C11E03C83C00E17B0D /* littlebubbleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EC4609F1E03C83C00E17B0D /* littlebubble */ = {
+			isa = PBXGroup;
+			children = (
+				8EC460A31E03C83C00E17B0D /* AppDelegate.h */,
+				8EC460A41E03C83C00E17B0D /* AppDelegate.m */,
+				8EC460A61E03C83C00E17B0D /* ViewController.h */,
+				8EC460A71E03C83C00E17B0D /* ViewController.m */,
+				8EC460A91E03C83C00E17B0D /* Main.storyboard */,
+				8EC460AC1E03C83C00E17B0D /* Assets.xcassets */,
+				8EC460AE1E03C83C00E17B0D /* LaunchScreen.storyboard */,
+				8EC460B11E03C83C00E17B0D /* Info.plist */,
+				8EC460A01E03C83C00E17B0D /* Supporting Files */,
+			);
+			path = littlebubble;
+			sourceTree = "<group>";
+		};
+		8EC460A01E03C83C00E17B0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8EC460A11E03C83C00E17B0D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EC460B91E03C83C00E17B0D /* littlebubbleTests */ = {
+			isa = PBXGroup;
+			children = (
+				8EC460BA1E03C83C00E17B0D /* littlebubbleTests.m */,
+				8EC460BC1E03C83C00E17B0D /* Info.plist */,
+			);
+			path = littlebubbleTests;
+			sourceTree = "<group>";
+		};
+		8EC460C41E03C83C00E17B0D /* littlebubbleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8EC460C51E03C83C00E17B0D /* littlebubbleUITests.m */,
+				8EC460C71E03C83C00E17B0D /* Info.plist */,
+			);
+			path = littlebubbleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EC4609C1E03C83B00E17B0D /* littlebubble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EC460CA1E03C83C00E17B0D /* Build configuration list for PBXNativeTarget "littlebubble" */;
+			buildPhases = (
+				8EC460991E03C83B00E17B0D /* Sources */,
+				8EC4609A1E03C83B00E17B0D /* Frameworks */,
+				8EC4609B1E03C83B00E17B0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = littlebubble;
+			productName = littlebubble;
+			productReference = 8EC4609D1E03C83C00E17B0D /* littlebubble.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8EC460B51E03C83C00E17B0D /* littlebubbleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EC460CD1E03C83C00E17B0D /* Build configuration list for PBXNativeTarget "littlebubbleTests" */;
+			buildPhases = (
+				8EC460B21E03C83C00E17B0D /* Sources */,
+				8EC460B31E03C83C00E17B0D /* Frameworks */,
+				8EC460B41E03C83C00E17B0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EC460B81E03C83C00E17B0D /* PBXTargetDependency */,
+			);
+			name = littlebubbleTests;
+			productName = littlebubbleTests;
+			productReference = 8EC460B61E03C83C00E17B0D /* littlebubbleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8EC460C01E03C83C00E17B0D /* littlebubbleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EC460D01E03C83C00E17B0D /* Build configuration list for PBXNativeTarget "littlebubbleUITests" */;
+			buildPhases = (
+				8EC460BD1E03C83C00E17B0D /* Sources */,
+				8EC460BE1E03C83C00E17B0D /* Frameworks */,
+				8EC460BF1E03C83C00E17B0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EC460C31E03C83C00E17B0D /* PBXTargetDependency */,
+			);
+			name = littlebubbleUITests;
+			productName = littlebubbleUITests;
+			productReference = 8EC460C11E03C83C00E17B0D /* littlebubbleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EC460951E03C83B00E17B0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = " 罗海峰";
+				TargetAttributes = {
+					8EC4609C1E03C83B00E17B0D = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = DY2VT5YJHM;
+						ProvisioningStyle = Automatic;
+					};
+					8EC460B51E03C83C00E17B0D = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = DY2VT5YJHM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8EC4609C1E03C83B00E17B0D;
+					};
+					8EC460C01E03C83C00E17B0D = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = DY2VT5YJHM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8EC4609C1E03C83B00E17B0D;
+					};
+				};
+			};
+			buildConfigurationList = 8EC460981E03C83B00E17B0D /* Build configuration list for PBXProject "littlebubble" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8EC460941E03C83B00E17B0D;
+			productRefGroup = 8EC4609E1E03C83C00E17B0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EC4609C1E03C83B00E17B0D /* littlebubble */,
+				8EC460B51E03C83C00E17B0D /* littlebubbleTests */,
+				8EC460C01E03C83C00E17B0D /* littlebubbleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EC4609B1E03C83B00E17B0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC460B01E03C83C00E17B0D /* LaunchScreen.storyboard in Resources */,
+				8EC460AD1E03C83C00E17B0D /* Assets.xcassets in Resources */,
+				8EC460AB1E03C83C00E17B0D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC460B41E03C83C00E17B0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC460BF1E03C83C00E17B0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EC460991E03C83B00E17B0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC460A81E03C83C00E17B0D /* ViewController.m in Sources */,
+				8EC460A51E03C83C00E17B0D /* AppDelegate.m in Sources */,
+				8EC460A21E03C83C00E17B0D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC460B21E03C83C00E17B0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC460BB1E03C83C00E17B0D /* littlebubbleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC460BD1E03C83C00E17B0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC460C61E03C83C00E17B0D /* littlebubbleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EC460B81E03C83C00E17B0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EC4609C1E03C83B00E17B0D /* littlebubble */;
+			targetProxy = 8EC460B71E03C83C00E17B0D /* PBXContainerItemProxy */;
+		};
+		8EC460C31E03C83C00E17B0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EC4609C1E03C83B00E17B0D /* littlebubble */;
+			targetProxy = 8EC460C21E03C83C00E17B0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8EC460A91E03C83C00E17B0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EC460AA1E03C83C00E17B0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8EC460AE1E03C83C00E17B0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EC460AF1E03C83C00E17B0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8EC460C81E03C83C00E17B0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8EC460C91E03C83C00E17B0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EC460CB1E03C83C00E17B0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DY2VT5YJHM;
+				INFOPLIST_FILE = littlebubble/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.3eCompany.littlebubble;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8EC460CC1E03C83C00E17B0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DY2VT5YJHM;
+				INFOPLIST_FILE = littlebubble/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.3eCompany.littlebubble;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8EC460CE1E03C83C00E17B0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DY2VT5YJHM;
+				INFOPLIST_FILE = littlebubbleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.3eCompany.littlebubbleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/littlebubble.app/littlebubble";
+			};
+			name = Debug;
+		};
+		8EC460CF1E03C83C00E17B0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DY2VT5YJHM;
+				INFOPLIST_FILE = littlebubbleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.3eCompany.littlebubbleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/littlebubble.app/littlebubble";
+			};
+			name = Release;
+		};
+		8EC460D11E03C83C00E17B0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = DY2VT5YJHM;
+				INFOPLIST_FILE = littlebubbleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.3eCompany.littlebubbleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = littlebubble;
+			};
+			name = Debug;
+		};
+		8EC460D21E03C83C00E17B0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = DY2VT5YJHM;
+				INFOPLIST_FILE = littlebubbleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.3eCompany.littlebubbleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = littlebubble;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EC460981E03C83B00E17B0D /* Build configuration list for PBXProject "littlebubble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EC460C81E03C83C00E17B0D /* Debug */,
+				8EC460C91E03C83C00E17B0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EC460CA1E03C83C00E17B0D /* Build configuration list for PBXNativeTarget "littlebubble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EC460CB1E03C83C00E17B0D /* Debug */,
+				8EC460CC1E03C83C00E17B0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8EC460CD1E03C83C00E17B0D /* Build configuration list for PBXNativeTarget "littlebubbleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EC460CE1E03C83C00E17B0D /* Debug */,
+				8EC460CF1E03C83C00E17B0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8EC460D01E03C83C00E17B0D /* Build configuration list for PBXNativeTarget "littlebubbleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EC460D11E03C83C00E17B0D /* Debug */,
+				8EC460D21E03C83C00E17B0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8EC460951E03C83B00E17B0D /* Project object */;
+}
