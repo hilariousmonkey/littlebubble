@@ -7,9 +7,11 @@
 //
 
 #import "AppDelegate.h"
-
-@interface AppDelegate ()
-
+#import "CYLTabBarControllerConfig.h"
+#import "ViewController.h"
+#import "LLoaddingViewController.h"
+#import "LPublicData.h"
+@interface AppDelegate ()<UITabBarControllerDelegate>
 @end
 
 @implementation AppDelegate
@@ -17,9 +19,38 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [[ViewController alloc] init];
+    
+    LPublicData* pubData = [LPublicData sharedUserInfo];
+    [pubData loadUserInfoFromSandBox];  //从沙盒加载数据
+    
+    LLoaddingViewController* loadVc = [[LLoaddingViewController alloc] init];  //启动页
+    [self.window setRootViewController:loadVc];
+    // loadVc.changeRoot = void(^ChangeRoot)(){
+    
+    //回调
+    loadVc.changeRoot = ^{
+        CYLTabBarControllerConfig * TabBarControllerConfig = [[CYLTabBarControllerConfig alloc] init];
+        [TabBarControllerConfig customizeTabBarAppearance:TabBarControllerConfig.tabBarController];
+        TabBarControllerConfig.tabBarController.delegate = self;
+        [self.window setRootViewController:TabBarControllerConfig.tabBarController];
+    };
+    [self.window makeKeyAndVisible];
+    [self customizeInterface];
     return YES;
 }
 
+-(BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
+    if ([LPublicData sharedUserInfo].userId == nil && [viewController isEqual:tabBarController.viewControllers[1]]) {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"您还未登录" delegate:self cancelButtonTitle:@"确定" otherButtonTitles: nil];
+        [alert show];
+
+        return NO;
+    }else
+        return YES;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -47,5 +78,42 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)customizeInterface {
+    [self setUpNavigationBarAppearance];
+}
+
+/**
+ *  设置navigationBar样式
+ */
+
+- (void)setUpNavigationBarAppearance {
+    UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
+    
+    UIImage *backgroundImage = nil;
+    NSDictionary *textAttributes = nil;
+    if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
+        backgroundImage = [UIImage imageNamed:@"navigationbar_background_tall"];
+        
+        textAttributes = @{
+                           NSFontAttributeName: [UIFont boldSystemFontOfSize:18],
+                           NSForegroundColorAttributeName: [UIColor blackColor],
+                           };
+    } else {
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
+        backgroundImage = [UIImage imageNamed:@"navigationbar_background"];
+        
+        textAttributes = @{
+                           UITextAttributeFont: [UIFont boldSystemFontOfSize:18],
+                           UITextAttributeTextColor: [UIColor blackColor],
+                           UITextAttributeTextShadowColor: [UIColor clearColor],
+                           UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetZero],
+                           };
+#endif
+    }
+    
+    [navigationBarAppearance setBackgroundImage:backgroundImage
+                                  forBarMetrics:UIBarMetricsDefault];
+    [navigationBarAppearance setTitleTextAttributes:textAttributes];
+}
 
 @end

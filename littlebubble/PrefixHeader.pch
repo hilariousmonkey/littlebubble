@@ -1,0 +1,46 @@
+//
+//  PrefixHeader.pch
+//  littlebubble
+//
+//  Created by  罗海峰 on 2017/1/3.
+//  Copyright © 2017年  罗海峰. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Masonry/Masonry.h>
+#import <UIImageView+WebCache.h>
+#import "LPublicData.h"
+#define SCREEN_WIDTH   [UIScreen mainScreen].bounds.size.width
+#define SCREENH_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+
+#ifdef DEBUG
+#define LRLog(...) NSLog(@"%s 第%d行 \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#else
+#define LRLog(...)
+
+#endif
+
+//带有RGBA的颜色设置
+#define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+
+// 获取RGB颜色
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+//#define FONT(F) [UIFont fontWithName:@".PingFang-SC-Light"  size:F]
+#define FONT(f) [UIFont systemFontOfSize:f]
+
+#define MAINCOLOR RGB(0, 187, 255)
+#define SCREENSCAL [UIScreen mainScreen].bounds.size.height/667
+#define BASEURL @"http://192.168.8.103:8080"
+#define IMAGEURL @"http://192.168.8.101/syqapp/"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//Alert
+#define Alert(_S_, ...) [[[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:(_S_), ##__VA_ARGS__] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil] show]
+
+#endif /* PrefixHeader_pch */
